@@ -7,5 +7,36 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
-    "hide-files.files": []
+    "editor.fontLigatures": "'calt', 'ss01'",
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "[javascript][typescript]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ],
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "window.autoDetectColorScheme": true,
+    "editor.fontFamily": "'Victor Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.tree.enableStickyScroll": false,
+    "editor.fontSize": 17,
+    "hide-files.files": [],
+    "editor.lineHeight": 25,
+    "editor.letterSpacing": 0.5,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontWeight": "400",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "solid",
+    "editor.renderWhitespace": "selection",
 }
