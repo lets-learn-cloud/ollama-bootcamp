@@ -1,7 +1,7 @@
 ---
 theme: default
 background: assets/cover.jpeg
-title: Welcome to Slidev
+title: Intro
 info: ""
 class: text-left
 drawings:
