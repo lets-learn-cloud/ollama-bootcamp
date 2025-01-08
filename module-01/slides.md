@@ -74,70 +74,146 @@ layoutClass: gap-16
 
 ::left::
 
+<div class="pt-12 text-center">
 <v-click>
 
-test <br>
-test <br>
-test <br>
-test <br>
-test <br>
-test <br>
-test <br>
+##  REPL using terminal
+
+<div class="flex justify-center items-center mt-8">
+  <img class="rounded-md w-48" src="./assets/terminal.png" alt="">
+</div>
+
 </v-click>
+</div>
 
 ::right::
 
+<div class="pt-12 text-center">
 <v-click>
 
-test <br>
-test <br>
-test <br>
-test <br>
-test <br>
-test <br>
+##  API calls using REST client
+
+<div class="flex justify-center items-center mt-8">
+  <img class="rounded-md w-48" src="./assets/postman.png" alt="">
+</div>
+
 </v-click>
+</div>
 
 <br/>
+
+<!-- API documentation: https://github.com/ollama/ollama/blob/main/docs/api.md -->
 
 ---
 transition: fade-out
 title: Prompting techniques - basics
 colorSchema: 'dark'
+layout: two-cols-header
 ---
 
 # Prompting techniques - basics
 
-<div class="pt-12 text-center">
+::left::
+
+<div class="pt-12 text-left">
+<v-click>
+
+##  👎 Bad Prompt Example
+
+<div class="flex ma-8 pa-2">
+
+> Write a story for me
+
+</div>
+
 
 <v-click>
 
-## title
+- Story about what? (context)<br>
+</v-click>
+
+<v-click>
+
+- How long should the story be? <br>
+</v-click>
+
+<v-click>
+
+- Which genre? <br>
+</v-click>
 
 </v-click>
 </div>
 
-<div class="ma-4 px-8">
-<br><br>
+::right::
+
+<div class="pt-12 text-left">
 <v-click>
 
-## sub-title 🎉 <br><br>
+##  👍 Good Prompt Example
+
+<div class="flex ma-8 pa-2">
+
+> <span v-mark.red="6">Acting as an expert storyteller</span>, write a <span v-mark.green="7">500-word</span> <span v-mark.blue="8">fantasy story set in a medieval kingdom</span> where a young blacksmith's apprentice discovers a magical sword that can only be wielded by someone with a pure heart. Include elements of adventure, a quest to save the kingdom from an evil sorcerer, and a <span v-mark.yellow="9">moral lesson about courage and integrity</span>. Use a third-person narrative style and ensure the story has a clear beginning, middle, and end.
+
+</div>
+
+
 </v-click>
-<div class="mx-4 px-8">
+</div>
+
+<br/>
+
+---
+transition: fade-out
+title: Prompting techniques - best practices
+colorSchema: 'dark'
+layout: two-cols-header
+---
+
+# Prompting techniques - best practices
+
+::left::
+
+<div class="pt-12 text-left">
+<v-click>
+
+##  👍 Good Prompt Example
+
+<div class="flex ma-8 pa-2">
+
+> <span v-mark.red="1">Acting as an expert storyteller</span>, write a <span v-mark.green="1">500-word</span> <span v-mark.blue="1">fantasy story set in a medieval kingdom</span> where a young blacksmith's apprentice discovers a magical sword that can only be wielded by someone with a pure heart. Include elements of adventure, a quest to save the kingdom from an evil sorcerer, and a <span v-mark.yellow="1">moral lesson about courage and integrity</span>. Use a third-person narrative style and ensure the story has a clear beginning, middle, and end.
+
+</div>
+</v-click>
+</div>
+<br/>
+
+::right::
+
+<div class="mt-8 px-2">
   <v-click>
 
-  ### 1. point 1 <br><br>
+  ### 1. **Providing Context** <br><br>
   </v-click>
   <v-click>
 
-  ### 2. point 2 <br><br>
+  ### 2. **Specifying Role** <br><br>
   </v-click>
   <v-click>
 
-  ### 3. point 3
+  ### 3. **Defining Task** <br><br>
+  </v-click>
+  <v-click>
+
+  ### 4. **Detailing Desired Output** <br><br>
+  </v-click>
+  <v-click>
+
+  ### 5. **Encouraging Creativity** <br><br>
   </v-click>
 </div>
 
-</div>
 ---
 transition: fade-out
 title: Prompting techniques - zero-shot
