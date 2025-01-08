@@ -15,39 +15,41 @@ colorSchema: 'dark'
 
 <v-click>
 
-<div class="backdrop-blur-md bg-white/30 ma-4 py-2 px-8">
+  <div class="backdrop-blur-md bg-black/30 py-2 px-8 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
 
-## **Module 01**
-</div>
+  ## **Module 01**
+  </div>
 
 </v-click>
 
-<v-click>
 
-<div class="backdrop-blur-md bg-black/10 py-2">
-<div class="ma-4 px-8">
-<v-click>
+<div class="backdrop-blur-md bg-black/10 py-2 rounded-md">
 
-### 1. Working with models locally
-</v-click>
+  <v-click>
+
+  <div class="ma-4 px-8">
+
+  ### 1. Working with models locally
+  </div>
+  </v-click>
+
+  <v-click>
+
+  <div class="ma-4 px-8">
+
+  ### 2. Prompting techniques
+  </div>
+  </v-click>
+
+  <v-click>
+
+  <div class="ma-4 px-8">
+
+  ### 3. Chain-of-Thought (CoT) Prompting: Guiding Reasoning
+  </div>
+  </v-click>
+
 </div>
-
-
-<div class="ma-4 px-8">
-<v-click>
-
-### 2. Prompting techniques
-</v-click>
-</div>
-
-<div class="ma-4 px-8">
-<v-click>
-
-### 3. Chain-of-Thought (CoT) Prompting: Guiding Reasoning
-</v-click>
-</div>
-</div>
-</v-click>
 
 <div @click="$slidev.nav.next" class="mt-12 py-1 text-right" hover:bg="white op-10">
     <carbon:arrow-right />
@@ -55,52 +57,61 @@ colorSchema: 'dark'
 
 ---
 transition: fade-out
-title: Requirements
+title: Working with models locally
 colorSchema: 'dark'
+layout: two-cols-header
+layoutClass: gap-16
 ---
 
-# Requirements
+# Working with models locally
 
 <div class="pt-12 text-center">
 <v-click>
 
-##  Follow along and <span v-mark.red="1">try these exercises yourself</span>
+##  2 <span v-mark.red="1">methods to work with the LLM</span>
+</v-click>
+</div>
+
+::left::
+
+<v-click>
+
+test <br>
+test <br>
+test <br>
+test <br>
+test <br>
+test <br>
+test <br>
 </v-click>
 
-</div>
+::right::
+
+<v-click>
+
+test <br>
+test <br>
+test <br>
+test <br>
+test <br>
+test <br>
+</v-click>
 
 <br/>
-<v-click>
 
-## You need <br><br>
-</v-click>
-<div class="mx-4 px-8">
-  <v-click>
-
-  ### 1. A Windows / Mac / Linux laptop / desktop <br><br>
-  </v-click>
-  <v-click>
-
-  ### 2. Access to internet <br><br>
-  </v-click>
-  <v-click>
-
-  ### 3. Permissions to install downloaded software
-  </v-click>
-</div>
 ---
 transition: fade-out
-title: What is Ollama?
+title: Prompting techniques - basics
 colorSchema: 'dark'
 ---
 
-# What is Ollama?
+# Prompting techniques - basics
 
 <div class="pt-12 text-center">
 
 <v-click>
 
-## Open-source framework for running and managing large language models (LLMs) on <span v-mark.undeline.red="1">local computing resources</span>
+## title
 
 </v-click>
 </div>
@@ -109,203 +120,141 @@ colorSchema: 'dark'
 <br><br>
 <v-click>
 
-## Advantages 🎉 <br><br>
+## sub-title 🎉 <br><br>
 </v-click>
 <div class="mx-4 px-8">
   <v-click>
 
-  ### 1. Load and deploy large language models on your PC<br><br>
+  ### 1. point 1 <br><br>
   </v-click>
   <v-click>
 
-  ### 2. Local sandbox for proof-of-concepts <br><br>
+  ### 2. point 2 <br><br>
   </v-click>
   <v-click>
 
-  ### 3. Run GenAI models offline! No vendor lock-in
+  ### 3. point 3
   </v-click>
 </div>
 
 </div>
-
-<!-- Ollama is still under development, but it looks like a promising tool for people who want to experiment with large language models without needing to rely on the cloud. -->
-
 ---
 transition: fade-out
-title: Environment Setup
-layout: image-right
-image: assets/slide-4.png
+title: Prompting techniques - zero-shot
 colorSchema: 'dark'
 ---
 
-# Environment Setup
+# Prompting techniques - Zero-Shot prompting
 
 <div class="pt-12 text-center">
 
 <v-click>
 
-### Similar / same steps for all O.S Windows / Mac / Linux
+## title
 
 </v-click>
-</div><br><br>
+</div>
 
+<div class="ma-4 px-8">
+<br><br>
+<v-click>
+
+## sub-title 🎉 <br><br>
+</v-click>
 <div class="mx-4 px-8">
   <v-click>
 
-  #### 1. Install ollama<br><br>
+  ### 1. point 1 <br><br>
   </v-click>
   <v-click>
 
-  #### 2. Test the ollama (CLI)<br><br>
+  ### 2. point 2 <br><br>
   </v-click>
   <v-click>
 
-  #### 3. Run an LLM offline
+  ### 3. point 3
   </v-click>
+</div>
+
+</div>
+---
+transition: fade-out
+title: Prompting techniques - one-shot
+colorSchema: 'dark'
+---
+
+# Prompting techniques - One-shot prompting
+
+<div class="pt-12 text-center">
+
+<v-click>
+
+## title
+
+</v-click>
+</div>
+
+<div class="ma-4 px-8">
+<br><br>
+<v-click>
+
+## sub-title 🎉 <br><br>
+</v-click>
+<div class="mx-4 px-8">
+  <v-click>
+
+  ### 1. point 1 <br><br>
+  </v-click>
+  <v-click>
+
+  ### 2. point 2 <br><br>
+  </v-click>
+  <v-click>
+
+  ### 3. point 3
+  </v-click>
+</div>
+
 </div>
 
 ---
 transition: fade-out
-title: ollama serve
+title: CoT Prompting - guided reasoning
 colorSchema: 'dark'
 ---
 
-# ollama CLI basics
+# CoT Prompting - guided reasoning
 
-<div class="pt-12">
+<div class="pt-12 text-center">
 
 <v-click>
 
-```sh
-> ollama serve
-```
+## title
 
 </v-click>
-</div><br><br>
+</div>
 
+<div class="ma-4 px-8">
+<br><br>
+<v-click>
+
+## sub-title 🎉 <br><br>
+</v-click>
 <div class="mx-4 px-8">
   <v-click>
 
-  #### - Starts the Ollama Server <br><br>
+  ### 1. point 1 <br><br>
   </v-click>
   <v-click>
 
-  #### - Serves Downloaded Models<br><br>
+  ### 2. point 2 <br><br>
   </v-click>
   <v-click>
 
-  <div class="bg-orange-300 text-red-950 pa-4 border-l-4 border-red-600">
-    If the Ollama icon is in your taskbar, the server is likely running, and you might not need to execute ollama serve.
-  </div>
+  ### 3. point 3
   </v-click>
 </div>
 
----
-transition: fade-out
-title: ollama create
-colorSchema: 'dark'
----
-
-# ollama CLI basics
-
-<div class="pt-12">
-
-<v-click>
-
-```sh
-> ollama create
-```
-
-</v-click>
-</div><br><br>
-
-<div class="mx-4 px-8">
-  <v-click>
-
-  #### - Creates a Custom Model <br><br>
-  </v-click>
-  <v-click>
-
-  #### - Uses Modelfiles<br><br>
-  </v-click>
-  <v-click>
-
-  <div class="bg-sky-100 text-stone-950 pa-4 border-l-4 border-sky-600">
-    We will use this in the upcoming videos to create our own models on top of base models as blueprints ✨
-  </div>
-  </v-click>
-</div>
-
----
-transition: fade-out
-title: ollama show
-colorSchema: 'dark'
----
-
-# ollama CLI basics
-
-<div class="pt-12">
-
-<v-click>
-
-```sh
-> ollama show
-```
-
-</v-click>
-</div><br><br>
-
-<div class="mx-4 px-8">
-  <v-click>
-
-  #### - Displays Model Information <br><br>
-  </v-click>
-  <v-click>
-
-  #### - Helps in Model Selection<br><br>
-  </v-click>
-  <v-click>
-
-  <div class="bg-teal-100 text-stone-950 pa-4 border-l-4 border-teal-600">
-    Helps us make informed decisions about which model to pick for a given use case / business problem.
-  </div>
-  </v-click>
-</div>
-
----
-transition: fade-out
-title: ollama run
-colorSchema: 'dark'
----
-
-# ollama CLI basics
-
-<div class="pt-12">
-
-<v-click>
-
-```sh
-> ollama run
-```
-
-</v-click>
-</div><br><br>
-
-<div class="mx-4 px-8">
-  <v-click>
-
-  #### - Executes an LLM <br><br>
-  </v-click>
-  <v-click>
-
-  #### - Enables Model Interaction<br><br>
-  </v-click>
-  <v-click>
-
-  <div class="bg-teal-100 text-stone-950 pa-4 border-l-4 border-teal-600">
-    Primary way to use Ollama for tasks like text generation, question answering, translation, and more via REPL / API calls.
-  </div>
-  </v-click>
 </div>
 
 ---

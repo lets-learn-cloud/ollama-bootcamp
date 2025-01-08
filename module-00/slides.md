@@ -15,29 +15,40 @@ colorSchema: 'dark'
 
 <v-click>
 
-## **Module 0**
+  <div class="backdrop-blur-md bg-black/30 py-2 px-8 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+
+  ## **Module 00**
+  </div>
+
 </v-click>
 
-<div class="ma-4 px-8">
-<v-click>
 
-### 1. What is Ollama?
-</v-click>
-</div>
+<div class="backdrop-blur-md bg-black/10 py-2 rounded-md">
 
+  <v-click>
 
-<div class="ma-4 px-8">
-<v-click>
+  <div class="ma-4 px-8">
 
-### 2. Environment Setup
-</v-click>
-</div>
+  ### 1. What is Ollama?
+  </div>
+  </v-click>
 
-<div class="ma-4 px-8">
-<v-click>
+  <v-click>
 
-### 3. ollama CLI basics
-</v-click>
+  <div class="ma-4 px-8">
+
+  ###  2. Environment Setup
+  </div>
+  </v-click>
+
+  <v-click>
+
+  <div class="ma-4 px-8">
+
+  ### 3. ollama CLI basics
+  </div>
+  </v-click>
+
 </div>
 
 <div @click="$slidev.nav.next" class="mt-12 py-1 text-right" hover:bg="white op-10">
