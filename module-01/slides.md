@@ -17,7 +17,7 @@ colorSchema: 'dark'
 
   <div class="backdrop-blur-md bg-black/30 py-2 px-8 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
 
-  ## **Module 01**
+  ## **Module 01: Basic Operations with Ollama**
   </div>
 
 </v-click>
